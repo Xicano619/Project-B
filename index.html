@@ -1,202 +1,120 @@
-<!-- Demo Layout for Bootstrap (with cards) -->
-<!DOCTYPE html>
-<html class="no-js" lang="en-us">
-​
+<html lang="en">
+
 <head>
-​
-  <meta charset="UTF-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!-- We need the following responsive meta tag to ensure things scale correctly across varying
-  devices. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/foundation.css" />
-​
-  <title>My First Website</title>
-​
-  <!-- We need to bring in the bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Beer</title>
 </head>
-​
+
 <body>
-​
-  <!-- NavBar (copied and pasted from WC3) -->
-  <!-- Static navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">BEER</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-​
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">CURRENT <span class="sr-only">(current)</span></a>
-        </li>
- <!--       <li class="nav-item">
-          <a class="nav-link" href="#">HOME</a>
-        </li>   --> 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            FAVORITE LOCATIONS
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">HOME</a>
-            <a class="dropdown-item" href="#">WORK</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">RECENT</a>
-          </div>
-        </li>
- <!--      <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li> -->
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Enter Address" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-​
-  <!-- Main Body goes in Container -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-2">
-      <!-- The content in this div gets wrapped in a card -->
-        <div class="card">
-          <div class="card-body">
-            ALES
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2">
-      <!-- The content in this div gets wrapped in a card -->
-        <div class="card">
-          <div class="card-body">
-            IPA
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-2">
-        <!-- The content in this div gets wrapped in a card -->
-          <div class="card">
-            <div class="card-body">
-              STOUTS
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-2">
-        <!-- The content in this div gets wrapped in a card -->
-          <div class="card">
-            <div class="card-body">
-              REDS
-            </div>
-          </div>
-        </div>     
-        <div class="col-sm-2">
-          <!-- The content in this div gets wrapped in a card -->
-            <div class="card">
-              <div class="card-body">
-                DOUBLE IPAS
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-          <!-- The content in this div gets wrapped in a card -->
-            <div class="card">
-              <div class="card-body">
-                MEADS
-              </div>
-            </div>
-          </div>                     
-    </div>
-    <div class="row">
-      <div class="col-lg-3">
-        <img class="img img-thumbnail" src="http://placehold.it/200x200">
-      </div>
-      <div class="col-lg-6">
-        <h2>Map Goes Here</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro facilis repudiandae dolorem fugit vitae, illo repellendus natus! Incidunt debitis consequatur pariatur quibusdam, neque reiciendis sequi quidem, veritatis voluptatum culpa cupiditate maxime. Obcaecati vitae magni quod corporis quia voluptas eligendi temporibus quaerat, assumenda porro placeat pariatur culpa excepturi blanditiis totam error quos provident eius! Dolore et obcaecati consequuntur delectus quo </p>
-      </div>
-      <div class="col-lg-3">
-        <img class="img img-thumbnail" src="http://placehold.it/200x200">
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-lg-3">
-        <img class="img img-thumbnail" src="http://placehold.it/200x200">
-      </div>
-      <div class="col-lg-6">
-        <h2>Map Goes Here</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eius rerum quaerat repudiandae a sunt voluptatum, sint voluptatem qui explicabo natus exercitationem dolor maiores debitis cupiditate, sed dicta tenetur placeat perferendis eum ipsa reprehenderit sapiente! Inventore fugiat dolores, totam asperiores maxime necessitatibus? Laborum soluta quo explicabo delectus sit quas. Facere aliquid nam repudiandae, veritatis est optio magni perferendis. Totam facere quam</p>
-      </div>
-      <div class="col-lg-3">
-        <img class="img img-thumbnail" src="http://placehold.it/200x200">
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-        <!-- The content in this div gets wrapped in a card -->
-          <div class="card">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor delectus a tempora fugiat est qui accusamus, modi libero recusandae, tenetur dolorem, nihil at? Fuga vero rem suscipit dolorum quo soluta laudantium aperiam fugit quae omnis placeat assumenda modi quod nam praesentium facere nesciunt minus, officiis, culpa esse. Saepe, ipsum asperiores.
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-        <!-- The content in this div gets wrapped in a card -->
-          <div class="card">
-            <div class="card-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nostrum repellendus ea quam provident nobis unde, numquam, eligendi dolores ab magnam laborum ex accusamus fugit! Quasi excepturi eius eligendi provident ipsa voluptate iusto pariatur eum, facere ratione, commodi nisi tenetur in repellat, similique expedita. Ducimus amet quam sapiente cupiditate esse!
-            </div>
-          </div>
-        </div>                   
-      </div>    
-    <br>
-  </div>
-​
-  <!-- Here we bring in some scripts required to allow some Bootstrap components to work.
-    For now, this is code to copy and paste. We'll get to script elements soon enough. -->
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"
-  ></script>
 
-  <script src="js/vendor/jquery.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="" class="brand-logo center">Beer Me</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#" id="home"></a>Home</li>
+                    <li>
+                        <a href="#" id="about"></a>About</li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li>
+                        <a href="#" id="home"></a>Home </li>
+                    <li>
+                        <a href="#" id="about"></a>About</li>
+                </ul>
+            </div>
+        </nav>
 
+        <div class="row">
+            <div class="col s12 center" id="beer-type">
+                <ul id="beer-type">
+                    <li><a href="#">Ales</a></li>
+                    <li><a href="#">IPA</a></li>
+                    <li><a href="#">Stouts</a></li>
+                    <li><a href="#">Blondes</a></li>
+                    <li><a href="#">Ciders</a></li>
+                    <li><a href="#">Meads</a></li>
+                </ul>
+            </div>
+            <div class="col s6 center ">
+                <li><a href="#">Full Bar</a></li>
+            </div>
+            <div class="col s6 center ">
+                <li><a href="#">Food</a></li>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s3 left">
+                <input id="beer-name" type="text" class="validate">
+                <label for="beer_name">Beer Name</label>
+                <ul class="collection with-header">
+                    <li class="collection-header" id="beer-search">
+                        <h4>Beers</h4>
+                    </li>
+                    <li class="collection-item" id="list">1</li>
+                    <li class="collection-item" id="list">2</li>
+                    <li class="collection-item" id="list">3</li>
+                    <li class="collection-item" id="list">4</li>
+                </ul>
+            </div>
+            <div class=" col m6 center" id="map">
+                <label for="map">MAP</label>
+            </div>
+            <div class="input-field col s3 right">
+                <input id="brewery-name" type="text" class="validate">
+                <label for="brewery_name">Brewery Name</label>
+                <ul class="collection with-header">
+                    <li class="collection-header" id="brewery-search">
+                        <h4>Breweries</h4>
+                    </li>
+                    <li class="collection-item" id="list">1</li>
+                    <li class="collection-item" id="list">2</li>
+                    <li class="collection-item" id="list">3</li>
+                    <li class="collection-item" id="list">4</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class=" col md 6 center">
+                    <div class="card transparent">
+                        <div class="card-content white-text">
+                            <span class="card-title beer-info">Info</span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                                a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="Assets/javascript.js"></script>
 </body>
-​
+
 </html>
-​
-C
-
-
-
-
-
-
-
-
-
