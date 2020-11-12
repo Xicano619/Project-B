@@ -1,5 +1,5 @@
 * {
-  font-family: 'Oleo Script', cursive;
+  font-family: "Oleo Script", cursive;
 }
 header {
   background: url(Mainbackground.jpg);
@@ -9,7 +9,7 @@ header {
 }
 @media screen and (max-width: 670px) {
   header {
-      min-height: 500px;
+    min-height: 500px;
   }
 }
 a {
@@ -18,7 +18,6 @@ a {
 }
 #search-icon {
   background: black;
-
 }
 
 .citylink {
@@ -29,8 +28,6 @@ a {
   background-repeat: no-repeat;
   color: goldenrod;
 }
-
-
 
 #search-input {
   background: black;
@@ -72,7 +69,7 @@ a {
   background-position: center;
   min-height: 1000px;
 }
-#logo{
+#logo {
   color: goldenrod;
 }
 #home {
@@ -84,7 +81,7 @@ a {
 #slogan {
   color: goldenrod;
 }
- h3 #san-diego {
+h3 #san-diego {
   flex: auto;
   justify-content: center;
   margin: auto;
@@ -95,10 +92,3 @@ a {
 #about-app {
   color: goldenrod;
 }
-
-
-
-
-
-
-
