@@ -52,7 +52,10 @@ a {
 }
 /*About page */
 #about {
-  background: url(619Bridge.png);
+  background: url(About.2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
 }
 
 
