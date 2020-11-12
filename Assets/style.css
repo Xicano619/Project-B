@@ -1,1 +1,63 @@
 
+header {
+  background: url(Background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+@media screen and (max-width: 670px) {
+  header {
+      min-height: 500px;
+  }
+}
+a {
+  font-size: 2rem;
+  margin: 1rem;
+}
+#search-icon {
+  background: black;
+
+}
+#search-input {
+  background: black;
+}
+#beer-type,
+#full-bar,
+#food {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+#beer-search,
+#brewery-search {
+  background: transparent;
+  color: white;
+}
+#list {
+  background: transparent;
+  color: white;
+}
+.validate {
+  color: white;
+}
+#map {
+  color: white;
+}
+#beer-type li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  zoom: 1;
+  *display: inline;
+  /* this fix is needed for IE7- */
+}
+/*About page */
+#about {
+  background: url(619Bridge.png);
+}
+
+
+
+
+
+
+
