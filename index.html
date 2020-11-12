@@ -17,6 +17,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- Oleo font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Compiled and minified CSS -->
     <link
@@ -29,7 +35,7 @@
 
     <link rel="stylesheet" href="./Assets/style.css" />
 
-    <title>BEERS</title>
+    <title>619-Local Breweries</title>
     ​
   </head>
   ​ ​
@@ -40,17 +46,17 @@
       <nav class="nav-wrapper transparent">
         <div class="container">
           <!-- Brand logo -->
-          <a href="" class="center brand-logo">Beer Me</a>
+          <a id="logo" href="" class="center brand-logo">Beer Me</a>
           <a href="" class="sidenav-trigger" data-target="mobile-menu">
             <i class="material-icons">menu</i>
           </a>
           <!-- Unlisted links: Home & About -->
           <ul class="right hide-on-med-and-down">
             <li>
-              <a href="#">Home</a>
+              <a id="home" href="#">Home</a>
             </li>
             <li>
-              <a href="./About.html">About</a>
+              <a id="about-link" href="./About.html">About</a>
             </li>
           </ul>
 
@@ -64,26 +70,26 @@
         <!-- Row with beer type links/tabs -->
         <div class="col s12 center" id="beer-type">
           <ul id="beer-type">
-            <li id="link1"><a href="#">OceanSide</a></li>
-            <li id="link2"><a href="#">Vista</a></li>
-            <li id="link3"><a href="#">North Park</a></li>
-            <li id="link4"><a href="#">San Diego</a></li>
-            <li id="link5"><a href="#">Mira Mesa</a></li>
-            <li id="link6"><a href="#">Chula Vista</a></li>
+            <li ><a class="citylink"  id="link1" href="#">OceanSide</a></li>
+            <li  ><a class="citylink" id="link2" href="#">Vista</a></li>
+            <li ><a class="citylink"  id="link3" href="#">North Park</a></li>
+            <li  ><a class="citylink" id="link4" href="#">North Park</a></li>
+            <li  ><a class="citylink" id="link5" href="#">San Diego</a></li>
+            <li  ><a class="citylink" id="link6" href="#">Mira Mesa</a></li>
+            <li  ><a class="citylink" id="link7" href="#">Chula Vista</a></li>
           </ul>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s3 left">
-          
           <ul class="collection with-header">
-            <li class="collection-header" id="beer-search">
+            <li class="collection-header" id="breweries">
               <h4>Breweries</h4>
             </li>
             <li class="collection-item" id="list">1</li>
-            <li class="collection-item" id="list">2</li>
-            <li class="collection-item" id="list">3</li>
-            <li class="collection-item" id="list">4</li>
+            <li class="collection-item"  id="list">2</li>
+            <li class="collection-item"  id="list">3</li>
+             <li class="collection-item" id="list">4</li>
             <li class="collection-item" id="list">5</li>
             <li class="collection-item" id="list">6</li>
             <li class="collection-item" id="list">7</li>
@@ -96,29 +102,29 @@
           <label for="map">MAP</label>
         </div>
         <div class="input-field col s3 right">
-         
-        
           <ul class="collection with-header">
-            <li class="collection-header" id="brewery-search">
+            <li class="collection-header" id="favorites">
               <h4>Favorites</h4>
             </li>
-            <li class="collection-item" id="list">1</li>
-            <li class="collection-item" id="list">2</li>
-            <li class="collection-item" id="list">3</li>
-            <li class="collection-item" id="list">4</li>
-            <li class="collection-item" id="list">5</li>
-            <li class="collection-item" id="list">6</li>
-            <li class="collection-item" id="list">7</li>
-            <li class="collection-item" id="list">8</li>
-            <li class="collection-item" id="list">9</li>
-            <li class="collection-item" id="list">10</li>
+            <li class="collection-item"  id="list">1</li>
+            <li class="collection-item"  id="list">2</li>
+            <li class="collection-item"  id="list">3</li>
+            <li class="collection-item"  id="list">4</li>
+            <li class="collection-item"  id="list">5</li>
+            <li class="collection-item"  id="list">6</li>
+            <li class="collection-item"  id="list">7</li>
+            <li class="collection-item"  id="list">8</li>
+            <li class="collection-item"  id="list">9</li>
+            <li class="collection-item"  id="list">10</li>
           </ul>
         </div>
         <div class="row">
           <div class="col md 6 center">
             <div class="card transparent">
               <div class="card-content white-text">
-                <span class="card-title beer-info" id="location-info">Info</span>
+                <span class="card-title beer-info" id="location-info"
+                  >Info</span
+                >
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
