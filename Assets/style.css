@@ -1,13 +1,15 @@
-
+* {
+  font-family: "Oleo Script", cursive;
+}
 header {
-  background: url(Background.jpg);
+  background: url(Mainbackground.jpg);
   background-size: cover;
   background-position: center;
   min-height: 1000px;
 }
 @media screen and (max-width: 670px) {
   header {
-      min-height: 500px;
+    min-height: 500px;
   }
 }
 a {
@@ -16,8 +18,17 @@ a {
 }
 #search-icon {
   background: black;
-
 }
+
+.citylink {
+  background-image: url(BeerMug.png);
+  position: left;
+  padding-left: 30px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  color: goldenrod;
+}
+
 #search-input {
   background: black;
 }
@@ -28,8 +39,9 @@ a {
   font-size: 1.5rem;
   padding: 10px;
 }
-#beer-search,
-#brewery-search {
+
+#breweries,
+#favorites {
   background: transparent;
   color: white;
 }
@@ -57,10 +69,26 @@ a {
   background-position: center;
   min-height: 1000px;
 }
-
-
-
-
-
-
-
+#logo {
+  color: goldenrod;
+}
+#home {
+  color: goldenrod;
+}
+#about-link {
+  color: goldenrod;
+}
+#slogan {
+  color: goldenrod;
+}
+h3 #san-diego {
+  flex: auto;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  font-size: 42px;
+  color: goldenrod;
+}
+#about-app {
+  color: goldenrod;
+}
