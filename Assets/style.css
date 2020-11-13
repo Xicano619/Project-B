@@ -23,7 +23,7 @@ a {
 .citylink {
   background-image: url(BeerMug.png);
   position: left;
-  padding-left: 30px;
+  padding-left: 35px;
   background-size: 50px;
   background-repeat: no-repeat;
   color: goldenrod;
@@ -45,7 +45,7 @@ a {
   background: transparent;
   color: white;
 }
-#list {
+.collection .collection-item.list {
   background: transparent;
   color: white;
 }
@@ -71,16 +71,20 @@ a {
 }
 #logo {
   color: goldenrod;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
-#home {
+#home,
+#about-link,
+#slogan,
+#logo-home,
+#favorites,
+#breweries,
+#location-info {
   color: goldenrod;
 }
-#about-link {
-  color: goldenrod;
-}
-#slogan {
-  color: goldenrod;
-}
+
 h3 #san-diego {
   flex: auto;
   justify-content: center;
@@ -91,4 +95,13 @@ h3 #san-diego {
 }
 #about-app {
   color: goldenrod;
+}
+
+/* grgmap.js */
+#map {
+  width: 500px;
+  height: 525px;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 80px;
 }
