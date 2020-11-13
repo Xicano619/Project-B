@@ -68,14 +68,13 @@
       </nav>
       <div class="row">
         <!-- Row with city links -->
-        <div class="col s12 center" id="beer-type">
+        <div class="col s12 center" id="city-type">
           <ul id="search-cities">
             <li><a class="citylink" id="link1" href="#">Oceanside</a></li>
             <li><a class="citylink" id="link2" href="#">Vista</a></li>
-            <li><a class="citylink" id="link3" href="#">North Park</a></li>
-             <li><a class="citylink" id="link5" href="#">San Diego</a></li>
-            <li><a class="citylink" id="link6" href="#">Mira Mesa</a></li>
-            <li><a class="citylink" id="link7" href="#">Chula Vista</a></li>
+             <li><a class="citylink" id="link3" href="#">San Diego</a></li>
+            <li><a class="citylink" id="link4" href="#">Mira Mesa</a></li>
+            <li><a class="citylink" id="lin5" href="#">Chula Vista</a></li>
           </ul>
         </div>
       </div>
@@ -124,12 +123,18 @@
           <div class="col md 6 center">
             <div class="card transparent">
               <div class="card-content white-text">
+                <!-- Switch -->
+                <div class="switch">
+                  <label id="favorites">Favorites
+                          <input type="checkbox">
+                          <span class="lever"></span>
+                      </label>
                 <!-- Create div where information of selected brewery -->
-                <span class="card-title beer-info" id="location-info"
+                <span class="card-title brewery-info" id="location-info"
                   >Info</span
                 >
                 <!-- basic information will populate this <p> tag such as: name, address and phone number of establishment -->
-                <p>
+                <p id="para-info">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
