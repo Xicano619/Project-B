@@ -1,1 +1,94 @@
+* {
+  font-family: "Oleo Script", cursive;
+}
+header {
+  background: url(Mainbackground.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 500px;
+  }
+}
+a {
+  font-size: 2rem;
+  margin: 1rem;
+}
+#search-icon {
+  background: black;
+}
 
+.citylink {
+  background-image: url(BeerMug.png);
+  position: left;
+  padding-left: 30px;
+  background-size: 50px;
+  background-repeat: no-repeat;
+  color: goldenrod;
+}
+
+#search-input {
+  background: black;
+}
+#beer-type,
+#full-bar,
+#food {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#breweries,
+#favorites {
+  background: transparent;
+  color: white;
+}
+#list {
+  background: transparent;
+  color: white;
+}
+.validate {
+  color: white;
+}
+#map {
+  color: white;
+}
+#beer-type li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  zoom: 1;
+  *display: inline;
+  /* this fix is needed for IE7- */
+}
+/*About page */
+#about {
+  background: url(About.2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1000px;
+}
+#logo {
+  color: goldenrod;
+}
+#home {
+  color: goldenrod;
+}
+#about-link {
+  color: goldenrod;
+}
+#slogan {
+  color: goldenrod;
+}
+h3 #san-diego {
+  flex: auto;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  font-size: 42px;
+  color: goldenrod;
+}
+#about-app {
+  color: goldenrod;
+}

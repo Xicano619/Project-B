@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
     function returnBreweriesInfo() {
     
     var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=breweries&location=Oceanside&limit=10&sortby=distance"; 
@@ -191,3 +192,9 @@
       localStorage.setItem("closed9", JSON.stringify(brewClosed9));
       };
     });
+=======
+
+$(document).ready(function() {
+  $('.sidenav').sidenav();
+});
+>>>>>>> 457c6f9ca1d8aa8a8ff5f40f43f005ffcaf34695
