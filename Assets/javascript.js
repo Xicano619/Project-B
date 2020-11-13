@@ -1,5 +1,4 @@
-
-    function returnBreweriesInfo(searchCity) {
+function returnBreweriesInfo(searchCity) {
     
     var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=breweries&location=" + searchCity +"&limit=10&sortby=distance"; 
 
@@ -199,7 +198,7 @@
       localStorage.setItem("phone9", brewPhone9);
       localStorage.setItem("closed9", brewClosed9);
       localStorage.setItem("reviews9", brewReviews9);
-      };
+      }
     });
 
     function breweryInfo(brewery) {
