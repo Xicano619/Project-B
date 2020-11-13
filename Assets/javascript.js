@@ -26,6 +26,8 @@
       var brewPhone = [];
       var brewReviews = [];
       var brewClosed = [];
+      var elList = [];
+      var elID = "";
       var j = 1;
       for (let i = 0; i< response.businesses.length; i++){
         brewName[i] = response.businesses[i].name;
@@ -38,9 +40,11 @@
         brewClosed[i] = response.businesses[i].is_closed;
 
         localStorage.setItem("name" + i, brewName[i]);
-        var elList1 = document.getElementById('list1');
-        console.log(elList1);
-        elList1.children[0].textContent = brewName[i];
+        elID = "list" + i;
+        console.log("elID = " + elID);
+        elList[i] = document.getElementById(elID);
+        console.log(elList[i]);
+        elList[i].children[0].textContent = brewName[i];
 
 
         localStorage.setItem("lat" + i, brewLat[i]);
