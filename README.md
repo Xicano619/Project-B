@@ -1,6 +1,6 @@
 # Project-B
 The BeerMe app allows the user to locate breweries in San Diego County by clicking on the following city-links: Oceanside, Vista, North Park, San Diego, Mira Mesa, and Chula Vista. 
-In addition, the user has the option to store their favorite brewery(s)
+In addition, the user has the option to store their favorite brewery(s).
 
 ### Overview:
 The BeerMe project is a drinking friendly search app for users 21 years-old or older, brewery goers. 
@@ -21,10 +21,10 @@ The following is our first version of a rough draft wireframe:
 ## Application Preview 
 
 <!-- ![BeerMe App](png)
- --> -->
+ --> 
 
  ## BeerMe Application Link:
- <!-- Add the browser link here -->
+ https://xicano619.github.io/Project-B/
 
 
  ## License 
