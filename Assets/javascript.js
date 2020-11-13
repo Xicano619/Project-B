@@ -23,6 +23,8 @@
       var brewPhone = [];
       var brewReviews = [];
       var brewClosed = [];
+      var elList = [];
+      var elID = "";
       var j = 1;
       for (let i = 0; i< response.businesses.length; i++){
         brewName[i] = response.businesses[i].name;
@@ -35,9 +37,11 @@
         brewClosed[i] = response.businesses[i].is_closed;
 
         localStorage.setItem("name" + i, brewName[i]);
-        var elList1 = document.getElementById('list1');
-        console.log(elList1);
-        elList1.children[0].textContent = brewName[i];
+        elID = "list" + i;
+        console.log("elID = " + elID);
+        elList[i] = document.getElementById(elID);
+        console.log(elList[i]);
+        elList[i].children[0].textContent = brewName[i];
 
 
         localStorage.setItem("lat" + i, brewLat[i]);
@@ -58,11 +62,10 @@
       var infoPhone = "Phone: " + localStorage.getItem("phone" + brewery);
       var infoReviews = "Yelp Review: " + localStorage.getItem("reviews" + brewery);
     
-      document.getElementById("location-info").innerHTML = infoName;
-      document.getElementById("location-info").innerHTML = infoAdd1;
-      document.getElementById("location-info").innerHTML = infoAdd2;
-      document.getElementById("location-info").innerHTML = infoPhone;
-      document.getElementById("location-info").innerHTML = infoReviews;  
+      document.getElementById("name-info").innerHTML = infoName;
+      document.getElementById("address1-info").innerHTML = infoAdd1;
+      document.getElementById("address2-info").innerHTML = infoAdd2;
+      document.getElementById("phone-info").innerHTML = infoPhone;  
     }
 
     $(document).ready(function() {
