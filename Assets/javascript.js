@@ -1,7 +1,7 @@
 
-    function returnBreweriesInfo() {
+    function returnBreweriesInfo(searchCity) {
     
-    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=breweries&location=Oceanside&limit=10&sortby=distance"; 
+    var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=breweries&location=" + searchCity +"&limit=10&sortby=distance"; 
 
     $.ajax({
       url: queryURL,
