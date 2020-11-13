@@ -16,10 +16,7 @@ a {
   font-size: 2rem;
   margin: 1rem;
 }
-#search-icon {
-  background: black;
-}
-
+/* image of beermug */
 .citylink {
   background-image: url(BeerMug.png);
   position: left;
@@ -29,40 +26,42 @@ a {
   color: goldenrod;
 }
 
-#search-input {
-  background: black;
-}
-#beer-type,
-#full-bar,
-#food {
-  color: white;
-  font-size: 1.5rem;
-  padding: 10px;
-}
-
+/* Columns of breweries and favorites-transparent  */
 #breweries,
 #favorites {
   background: transparent;
-  color: white;
+  color: goldenrod;
 }
+/* List of items on both columns-breweries & favorites */
 .collection .collection-item.list {
   background: transparent;
-  color: white;
+  color: goldenrod;
 }
 .validate {
-  color: white;
+  color: goldenrod;
 }
 #map {
-  color: white;
+  color: goldenrod;
 }
-#beer-type li {
+#city-type li {
   display: inline-block;
   /* You can also add some margins here to make it look prettier */
   zoom: 1;
   *display: inline;
   /* this fix is needed for IE7- */
 }
-/*About page */
+#home,
+#about-link,
+#slogan,
+#logo-home,
+#favorites,
+#breweries,
+#location-info,
+#para-info,
+#favorites-switch {
+  color: goldenrod;
+}
+/*About page styles */
 #about {
   background: url(About.2.png);
   background-size: cover;
@@ -74,15 +73,6 @@ a {
   position: absolute;
   left: 0;
   right: 0;
-}
-#home,
-#about-link,
-#slogan,
-#logo-home,
-#favorites,
-#breweries,
-#location-info {
-  color: goldenrod;
 }
 
 h3 #san-diego {
@@ -97,7 +87,7 @@ h3 #san-diego {
   color: goldenrod;
 }
 
-/* grgmap.js */
+/* grgmap.js styles*/
 #map {
   width: 500px;
   height: 525px;
