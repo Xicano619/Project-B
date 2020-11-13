@@ -202,6 +202,20 @@
       };
     });
 
+    function breweryInfo(brewery) {
+        var infoName = "Name: " + localStorage.getItem("name" + brewery);
+        var infoAdd1 = "Address: " + localStorage.getItem("address1" + brewery);
+        var infoAdd2 = "         " + localStorage.getItem("address2" + brewery);
+        var infoPhone = "Phone: " + localStorage.getItem("phone" + brewery);
+        var infoReviews = "Yelp Review: " + localStorage.getItem("reviews" + brewery);
+      
+        document.getElementById("location-info").innerHTML = infoName;
+        document.getElementById("location-info").innerHTML = infoAdd1;
+        document.getElementById("location-info").innerHTML = infoAdd2;
+        document.getElementById("location-info").innerHTML = infoPhone;
+        document.getElementById("location-info").innerHTML = infoReviews;  
+      }
+
 $(document).ready(function() {
   $('.sidenav').sidenav();
 });
