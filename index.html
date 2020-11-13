@@ -76,6 +76,7 @@
             <li><a class="citylink" id="link4"  href="javascript:returnBreweriesInfo('Mira Mesa')">Mira Mesa</a></li>
             <li><a class="citylink" id="link5"  href="javascript:returnBreweriesInfo('Chula Vista')">Chula Vista</a></li>
           </ul>
+          
         </div>
       </div>
       <div class="row">
@@ -85,7 +86,7 @@
             <li class="collection-header" id="breweries">
               <h4>Breweries</h4>
             </li>
-            <li class="collection-item list" id="list1">1</li>
+            <li class="collection-item list" id="list1"><a href="javascript:breweryInfo(1)"></a>1</li>
             <li class="collection-item list" id="list2">2</li>
             <li class="collection-item list" id="list3">3</li>
             <li class="collection-item list" id="list4">4</li>
@@ -150,13 +151,13 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMsdx6MgcUOmDUJ7_sYQgM-I46plWuL1c&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
-    
     <!-- JS scripts files: map & jquery -->
-    <script src="./Assets/grgmap.js"></script>
+    <script src="./Assets/theMap.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./Assets/javascript.js"></script>
+    <script src="./Assets/listDriver.js"></script>
   </body>
   ​
 </html>
