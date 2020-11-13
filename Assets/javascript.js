@@ -65,11 +65,10 @@
       var infoPhone = "Phone: " + localStorage.getItem("phone" + brewery);
       var infoReviews = "Yelp Review: " + localStorage.getItem("reviews" + brewery);
     
-      document.getElementById("location-info").innerHTML = infoName;
-      document.getElementById("location-info").innerHTML = infoAdd1;
-      document.getElementById("location-info").innerHTML = infoAdd2;
-      document.getElementById("location-info").innerHTML = infoPhone;
-      document.getElementById("location-info").innerHTML = infoReviews;  
+      document.getElementById("name-info").innerHTML = infoName;
+      document.getElementById("address1-info").innerHTML = infoAdd1;
+      document.getElementById("address2-info").innerHTML = infoAdd2;
+      document.getElementById("phone-info").innerHTML = infoPhone;  
     }
 
     $(document).ready(function() {
