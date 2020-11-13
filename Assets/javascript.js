@@ -1,4 +1,4 @@
-    function returnBreweriesInfo(searchCity) {
+  function returnBreweriesInfo(searchCity) {
     
     var queryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=breweries&location=" + searchCity +"&limit=10&sortby=distance"; 
 
@@ -26,6 +26,7 @@
       var brewPhone = [];
       var brewReviews = [];
       var brewClosed = [];
+      var j = 1;
       for (let i = 0; i< response.businesses.length; i++){
         brewName[i] = response.businesses[i].name;
         brewLat[i] = response.businesses[i].coordinates.latitude;
@@ -35,7 +36,13 @@
         brewPhone[i] = response.businesses[i].display_phone;
         brewReviews[i] = response.businesses[i].url;
         brewClosed[i] = response.businesses[i].is_closed;
+
         localStorage.setItem("name" + i, brewName[i]);
+        var elList1 = document.getElementById('list1');
+        console.log(elList1);
+        elList1.children[0].textContent = brewName[i];
+
+
         localStorage.setItem("lat" + i, brewLat[i]);
         localStorage.setItem("lon" + i, brewLon[i]);
         localStorage.setItem("address1" + i, brewAddress1[i]);
@@ -44,21 +51,23 @@
         localStorage.setItem("reviews" + i, brewReviews[i]);
         localStorage.setItem("closed" + i, brewClosed[i]);
       };
+    });
+  }
 
     function breweryInfo(brewery) {
-        var infoName = "Name: " + localStorage.getItem("name" + brewery);
-        var infoAdd1 = "Address: " + localStorage.getItem("address1" + brewery);
-        var infoAdd2 = "         " + localStorage.getItem("address2" + brewery);
-        var infoPhone = "Phone: " + localStorage.getItem("phone" + brewery);
-        var infoReviews = "Yelp Review: " + localStorage.getItem("reviews" + brewery);
-      
-        document.getElementById("location-info").innerHTML = infoName;
-        document.getElementById("location-info").innerHTML = infoAdd1;
-        document.getElementById("location-info").innerHTML = infoAdd2;
-        document.getElementById("location-info").innerHTML = infoPhone;
-        document.getElementById("location-info").innerHTML = infoReviews;  
-      }
+      var infoName = "Name: " + localStorage.getItem("name" + brewery);
+      var infoAdd1 = "Address: " + localStorage.getItem("address1" + brewery);
+      var infoAdd2 = "         " + localStorage.getItem("address2" + brewery);
+      var infoPhone = "Phone: " + localStorage.getItem("phone" + brewery);
+      var infoReviews = "Yelp Review: " + localStorage.getItem("reviews" + brewery);
+    
+      document.getElementById("location-info").innerHTML = infoName;
+      document.getElementById("location-info").innerHTML = infoAdd1;
+      document.getElementById("location-info").innerHTML = infoAdd2;
+      document.getElementById("location-info").innerHTML = infoPhone;
+      document.getElementById("location-info").innerHTML = infoReviews;  
+    }
 
-$(document).ready(function() {
-  $('.sidenav').sidenav();
-});
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+    });
