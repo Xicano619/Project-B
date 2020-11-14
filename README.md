@@ -1,6 +1,5 @@
 # Project-B
-The SDC Beer app allows the user to locate breweries in San Diego County by clicking on the following city-links: Oceanside, Vista, San Diego, Mira Mesa, and Chula Vista. 
-In addition, the user has the option to store their favorite brewery(s).
+The SDC Beer app allows the user to locate breweries in San Diego County by clicking on the following city-links: Oceanside, Vista, San Diego, Mira Mesa, and Chula Vista.
 
 ### Overview:
 The SDC Beer project is a drinking friendly search app for users 21 years-old or older, brewery goers. 
