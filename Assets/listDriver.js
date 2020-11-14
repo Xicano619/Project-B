@@ -11,19 +11,24 @@ function addFav(infoName, infoAdd1, infoAdd2, infoPhone) {
     elFav[favCount] = document.getElementById(elID);
     elFav[favCount].children[0].textContent = infoName;
     favCount++;
+    var elClearButton = document.getElementById("clearBtn");
+    elClearButton.onclick = function(event) {
+        delFav();
+    }
 }
 
 function delFav() {
-    document.getElementById("fav0").innerHTML = "";
-    document.getElementById("fav1").innerHTML = "";
-    document.getElementById("fav2").innerHTML = "";
-    document.getElementById("fav3").innerHTML = "";
-    document.getElementById("fav4").innerHTML = "";
-    document.getElementById("fav5").innerHTML = "";
-    document.getElementById("fav6").innerHTML = "";
-    document.getElementById("fav7").innerHTML = "";
-    document.getElementById("fav8").innerHTML = "";
-    document.getElementById("fav9").innerHTML = "";
+    favCount = 0;
+    document.getElementById("fav0").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav1").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav2").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav3").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav4").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav5").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav6").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav7").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav8").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav9").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
 }
 
 function favInfo(brewery) {
