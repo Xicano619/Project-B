@@ -24,7 +24,7 @@ The following is our first version of a rough draft wireframe:
 
 ![Screen Shot 2020-11-14 at 12 14 22 AM](https://user-images.githubusercontent.com/25594179/99143057-80ab3180-260f-11eb-871c-91d0300c0fb2.png)
 
-
+![Screen Shot 2020-11-14 at 12 17 57 AM](https://user-images.githubusercontent.com/25594179/99143080-b51eed80-260f-11eb-8392-cd5fcf59a21a.png)
 
  ## BeerMe Application Link:
  https://xicano619.github.io/Project-B/
