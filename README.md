@@ -32,7 +32,7 @@ The following is our first version of a rough draft wireframe:
 
  ## License 
 
- MIT License
+Licensed under the [MIT](LICENSE) license.
 
 Copyright (c) 2020  Iván Sillas-Navarro
 
