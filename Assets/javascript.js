@@ -68,6 +68,7 @@
     document.getElementById("address1-info").innerHTML = htmlAdd1;
     document.getElementById("address2-info").innerHTML = htmlAdd2;
     document.getElementById("phone-info").innerHTML = htmlPhone;
+    document.getElementById("favorites-switch").style.display = "block";
     $(document).ready(function() {
       $("input").change(function() {
         if($(this).is(":checked")) {
