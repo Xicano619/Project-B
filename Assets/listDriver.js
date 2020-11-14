@@ -3,16 +3,20 @@ var favCount = 0;
 let fbrewery = [];
 
 function addFav(infoName, infoAdd1, infoAdd2, infoPhone) {
-    var elFav = [];
-    var elID = "";
-    // add to array
-    fbrewery.push([infoName, infoAdd1, infoAdd2, infoPhone, favCount]);
-    elID = "fav" + favCount;
-    elFav[favCount] = document.getElementById(elID);
-    elFav[favCount].children[0].textContent = infoName;
-    favCount++;
-    var elClearButton = document.getElementById("clearBtn");
-    elClearButton.onclick = function(event) {
+    if (favCount < 10) {
+        var elFav = [];
+        var elID = "";
+        // add to array
+        fbrewery.push([infoName, infoAdd1, infoAdd2, infoPhone, favCount]);
+        elID = "fav" + favCount;
+        elFav[favCount] = document.getElementById(elID);
+        elFav[favCount].children[0].textContent = infoName;
+        favCount++;
+        var elClearButton = document.getElementById("clearBtn");
+        elClearButton.onclick = function(event) {
+            delFav();
+        } 
+    } else {
         delFav();
     }
 }
