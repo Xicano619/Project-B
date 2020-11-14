@@ -113,10 +113,15 @@
                 <label for="map">MAP</label>
             </div>
             <div class="input-field col s3 right">
+                <div class="clear">
+                    <label id="clearLabel">Clear</label>
+                    <button id="clearBtn"></button>
+
+                </div>
                 <ul class="collection with-header">
                     <!-- Column where user stores their favorite brewery(s) -->
                     <li class="collection-header" id="favorites">
-                        <h4>Favorites</h4>
+                        <h4 href="#">History</h4>
                     </li>
                     <li class="collection-item list" id="fav1">1</li>
                     <li class="collection-item list" id="fav2">2</li>
@@ -134,14 +139,11 @@
                 <div class="col md 6 center">
                     <div class="card transparent" id="infoCard">
                         <div class="card-content white-text">
-                            <!-- Switch -->
-                            <div class="center switch">
-                                <label id="favorites-switch">Favorites
-                          <input type="checkbox">
-                          <span class="lever"></span>
-                      </label>
-                                <!-- Create div where information of selected brewery -->
-                                <span class="card-title brewery-info" id="location-info">Info</span
+
+
+
+                            <!-- Create div where information of selected brewery -->
+                            <span class="card-title brewery-info" id="location-info">Info</span
                 >
                 <!-- basic information will populate this <p> tag such as: name, address and phone number of establishment -->
                   <p id="name-info"></p>

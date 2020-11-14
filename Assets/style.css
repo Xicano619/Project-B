@@ -164,3 +164,16 @@ h3 #san-diego {
     font-size: 30px;
     padding-left: 700px;
 }
+
+#clearLabel {
+    color: goldenrod;
+    font-size: 1rem;
+    padding-right: 2rem;
+}
+
+#clearBtn {
+    height: 15px;
+    width: 20px;
+    border-radius: 24px;
+    padding-right: 35px;
+}
