@@ -93,9 +93,13 @@ li {
 #favorites,
 #breweries,
 #location-info,
-#para-info,
+#para-info {
+    color: goldenrod;
+}
+
 #favorites-switch {
     color: goldenrod;
+    display: none;
 }
 
 
