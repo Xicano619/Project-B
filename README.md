@@ -22,6 +22,8 @@ The following is our first version of a rough draft wireframe:
 
 ![Screen Shot 2020-11-14 at 12 13 53 AM](https://user-images.githubusercontent.com/25594179/99143005-07134380-260f-11eb-978c-2e4522b83a64.png)
 
+![Screen Shot 2020-11-14 at 12 14 22 AM](https://user-images.githubusercontent.com/25594179/99143057-80ab3180-260f-11eb-871c-91d0300c0fb2.png)
+
 
 
  ## BeerMe Application Link:
