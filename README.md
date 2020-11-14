@@ -1,13 +1,13 @@
 # Project-B
-The BeerMe app allows the user to locate breweries in San Diego County by clicking on the following city-links: Oceanside, Vista, North Park, San Diego, Mira Mesa, and Chula Vista. 
+The SDC Beer app allows the user to locate breweries in San Diego County by clicking on the following city-links: Oceanside, Vista, San Diego, Mira Mesa, and Chula Vista. 
 In addition, the user has the option to store their favorite brewery(s).
 
 ### Overview:
-The BeerMe project is a drinking friendly search app for users 21 years-old or older, brewery goers. 
+The SDC Beer project is a drinking friendly search app for users 21 years-old or older, brewery goers. 
 San Diego County has a reputation for having solid breweries.
-BeerMe app provides the user with 6 cities/suburbs  links that when, clicked, 10 breweries from that respective city/suburb. 
+SDC Beer app provides the user with 6 cities/suburbs  links that when, clicked, 10 breweries from that respective city/suburb. 
 Also, the user is provided a google map visual geo-location which is activated upon the user click of the link. 
-The user then has the option of 10 breweries to select from, and is also provided the option ot store their favorite brewery(s) on the app for future references. 
+The user will see a list of 10 breweries to select from, and is also provided the history of breweries they previously viewed so they can refer to them as they explore other cities. 
 
 
 
