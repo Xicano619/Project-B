@@ -1,55 +1,86 @@
 * {
-  font-family: "Oleo Script", cursive;
-}
-header {
-  background: url(Mainbackground.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 1000px;
-}
-@media screen and (max-width: 670px) {
-  header {
-    min-height: 500px;
-  }
-}
-a {
-  font-size: 2rem;
-  margin: 1rem;
-}
-/* image of beermug */
-.citylink {
-  background-image: url(BeerMug.png);
-  position: left;
-  padding-left: 35px;
-  background-size: 50px;
-  background-repeat: no-repeat;
-  color: goldenrod;
+    font-family: "Oleo Script", cursive;
 }
 
+header {
+    background: url(Mainbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
+}
+
+@media screen and (max-width: 670px) {
+    header {
+        min-height: 500px;
+    }
+}
+
+a {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+
+/* image of beermug */
+
+.citylink {
+    background-image: url(BeerMug.png);
+    position: left;
+    padding-left: 35px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    color: goldenrod;
+}
+
+#link1,
+#link2,
+#link3,
+#link4,
+#link5 {
+    font-size: 30px;
+}
+
+
 /* Columns of breweries and favorites-transparent  */
+
 #breweries,
 #favorites {
-  background: transparent;
-  color: goldenrod;
+    background: transparent;
+    color: goldenrod;
 }
+
+
 /* List of items on both columns-breweries & favorites */
+
 .collection .collection-item.list {
-  background: transparent;
-  color: goldenrod;
+    background: transparent;
+    color: goldenrod;
 }
+
+li a {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
 .validate {
-  color: goldenrod;
+    color: goldenrod;
 }
+
 #map {
-  color: goldenrod;
+    color: goldenrod;
 }
+
 #city-type li {
-  display: inline-block;
-  /* You can also add some margins here to make it look prettier */
-  zoom: 1;
-  *display: inline;
-  /* this fix is needed for IE7- */
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom: 1;
+    *display: inline;
+    /* this fix is needed for IE7- */
 }
+
 #home,
 #about-link,
 #slogan,
@@ -59,39 +90,46 @@ a {
 #location-info,
 #para-info,
 #favorites-switch {
-  color: goldenrod;
+    color: goldenrod;
 }
+
+
 /*About page styles */
+
 #about {
-  background: url(About.2.png);
-  background-size: cover;
-  background-position: center;
-  min-height: 1000px;
+    background: url(About.2.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 1000px;
 }
+
 #logo {
-  color: goldenrod;
-  position: absolute;
-  left: 0;
-  right: 0;
+    color: goldenrod;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 h3 #san-diego {
-  flex: auto;
-  justify-content: center;
-  margin: auto;
-  width: 50%;
-  font-size: 42px;
-  color: goldenrod;
-}
-#about-app {
-  color: goldenrod;
+    flex: auto;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    font-size: 42px;
+    color: goldenrod;
 }
 
+#about-app {
+    color: goldenrod;
+}
+
+
 /* grgmap.js styles*/
+
 #map {
-  width: 500px;
-  height: 525px;
-  justify-content: center;
-  margin-top: 25px;
-  margin-left: 80px;
+    width: 500px;
+    height: 525px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 80px;
 }
