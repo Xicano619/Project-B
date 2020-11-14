@@ -55,18 +55,31 @@
     });
   }
 
-    function breweryInfo(brewery) {
-      var infoName = "Name: " + localStorage.getItem("name" + brewery);
-      var infoAdd1 = "Address: " + localStorage.getItem("address1" + brewery);
-      var infoAdd2 = "         " + localStorage.getItem("address2" + brewery);
-      var infoPhone = "Phone: " + localStorage.getItem("phone" + brewery);
-      var infoReviews = "Yelp Review: " + localStorage.getItem("reviews" + brewery);
-    
-      document.getElementById("name-info").innerHTML = infoName;
-      document.getElementById("address1-info").innerHTML = infoAdd1;
-      document.getElementById("address2-info").innerHTML = infoAdd2;
-      document.getElementById("phone-info").innerHTML = infoPhone;  
-    }
+  function breweryInfo(brewery) {
+    var infoName = localStorage.getItem("name" + brewery);
+    var infoAdd1 = localStorage.getItem("address1" + brewery);
+    var infoAdd2 = localStorage.getItem("address2" + brewery);
+    var infoPhone = localStorage.getItem("phone" + brewery);
+    var htmlName = "Name: " + infoName;
+    var htmlAdd1 = "Address: " + infoAdd1;
+    var htmlAdd2 = "         " + infoAdd2;
+    var htmlPhone = "Phone: " + infoPhone;
+    document.getElementById("name-info").innerHTML = htmlName;
+    document.getElementById("address1-info").innerHTML = htmlAdd1;
+    document.getElementById("address2-info").innerHTML = htmlAdd2;
+    document.getElementById("phone-info").innerHTML = htmlPhone;
+    $(document).ready(function() {
+      $("input").change(function() {
+        if($(this).is(":checked")) {
+          console.log("Is checked");
+          addFav(infoName,infoAdd1,infoAdd2, infoPhone)
+        }
+        else {
+          console.log("Is Not checked");
+        }
+      })
+    });
+  }
 
     $(document).ready(function() {
       $('.sidenav').sidenav();
