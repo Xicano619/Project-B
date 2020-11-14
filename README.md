@@ -28,6 +28,9 @@ The following is our first version of a rough draft wireframe:
  ## BeerMe Application Link:
  https://xicano619.github.io/Project-B/
 
+## Presentation
+
+[Project 1 - SDC Beer Me.pptx](https://github.com/Xicano619/Project-B/files/5541347/Project.1.-.SDC.Beer.Me.pptx)
 
  ## License 
 
