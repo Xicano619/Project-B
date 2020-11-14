@@ -1,5 +1,4 @@
 var favCount = 0;
-// fbrewery = [name, add1, add2, phone]
 
 let fbrewery = [];
 
@@ -9,16 +8,22 @@ function addFav(infoName, infoAdd1, infoAdd2, infoPhone) {
     // add to array
     fbrewery.push([infoName, infoAdd1, infoAdd2, infoPhone, favCount]);
     elID = "fav" + favCount;
-    console.log("elID = " + elID);
     elFav[favCount] = document.getElementById(elID);
-    console.log(elFav[favCount]);
     elFav[favCount].children[0].textContent = infoName;
     favCount++;
 }
 
 function delFav() {
-    console.log("Removing from array");
-    // del from array
+    document.getElementById("fav0").innerHTML = "";
+    document.getElementById("fav1").innerHTML = "";
+    document.getElementById("fav2").innerHTML = "";
+    document.getElementById("fav3").innerHTML = "";
+    document.getElementById("fav4").innerHTML = "";
+    document.getElementById("fav5").innerHTML = "";
+    document.getElementById("fav6").innerHTML = "";
+    document.getElementById("fav7").innerHTML = "";
+    document.getElementById("fav8").innerHTML = "";
+    document.getElementById("fav9").innerHTML = "";
 }
 
 function favInfo(brewery) {
@@ -33,12 +38,3 @@ function favInfo(brewery) {
     document.getElementById("phone-info").innerHTML = htmlPhone;    
   }
 
-
-function build_list() {
-    var brewery = [];
-    for (let i = 0; i< 10; i++){
-        brewery[i] = localStorage.getItem("name" + i);
-        console.log(brewery[i]);
-    }
-
-}

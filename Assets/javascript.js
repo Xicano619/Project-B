@@ -35,15 +35,10 @@
         brewPhone[i] = response.businesses[i].display_phone;
         brewReviews[i] = response.businesses[i].url;
         brewClosed[i] = response.businesses[i].is_closed;
-
         localStorage.setItem("name" + i, brewName[i]);
         elID = "list" + i;
-        console.log("elID = " + elID);
         elList[i] = document.getElementById(elID);
-        console.log(elList[i]);
         elList[i].children[0].textContent = brewName[i];
-
-
         localStorage.setItem("lat" + i, brewLat[i]);
         localStorage.setItem("lon" + i, brewLon[i]);
         localStorage.setItem("address1" + i, brewAddress1[i]);
@@ -68,18 +63,7 @@
     document.getElementById("address1-info").innerHTML = htmlAdd1;
     document.getElementById("address2-info").innerHTML = htmlAdd2;
     document.getElementById("phone-info").innerHTML = htmlPhone;
-    document.getElementById("favorites-switch").style.display = "block";
-    $(document).ready(function() {
-      $("input").change(function() {
-        if($(this).is(":checked")) {
-          console.log("Is checked");
-          addFav(infoName,infoAdd1,infoAdd2, infoPhone)
-        }
-        else {
-          console.log("Is Not checked");
-        }
-      })
-    });
+    addFav(infoName,infoAdd1,infoAdd2, infoPhone);
   }
 
     $(document).ready(function() {
