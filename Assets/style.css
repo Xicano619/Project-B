@@ -29,7 +29,7 @@ a {
     padding-left: 35px;
     background-size: 50px;
     background-repeat: no-repeat;
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 #link1,
@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-    color: #007AFF;
+    color: #2c90fa;
 }
 
 
@@ -50,7 +50,7 @@ a:hover {
 #breweries,
 #favorites {
     background: transparent;
-    color: goldenrod;
+    color: grgb(222, 189, 2);
 }
 
 
@@ -58,12 +58,12 @@ a:hover {
 
 .collection .collection-item.list {
     background: transparent;
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 li a {
     font-size: 20px;
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 li {
@@ -71,11 +71,11 @@ li {
 }
 
 .validate {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 #map {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 #city-type li {
@@ -94,11 +94,11 @@ li {
 #breweries,
 #location-info,
 #para-info {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 #favorites-switch {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
     display: none;
 }
 
@@ -113,7 +113,7 @@ li {
 }
 
 #logo {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
     position: absolute;
     left: 0;
     right: 0;
@@ -125,11 +125,11 @@ h3 #san-diego {
     margin: auto;
     width: 50%;
     font-size: 42px;
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 #about-app {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 
@@ -140,11 +140,11 @@ h3 #san-diego {
     height: 525px;
     justify-content: center;
     margin-top: 25px;
-    margin-left: 115px;
+    margin-left: 200px;
 }
 
 .card-title {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
     justify-content: center;
     width: 500px
 }
@@ -153,11 +153,11 @@ h3 #san-diego {
 #address1-info,
 #address2-info,
 #phone-info {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
 }
 
 #infoCard {
-    margin-left: 450px;
+    margin-left: 620px;
 }
 
 .center-brand-logo {
@@ -166,7 +166,7 @@ h3 #san-diego {
 }
 
 #clearLabel {
-    color: goldenrod;
+    color: rgb(222, 189, 2);
     font-size: 1rem;
     padding-right: 2rem;
 }
@@ -176,4 +176,21 @@ h3 #san-diego {
     width: 20px;
     border-radius: 24px;
     padding-right: 35px;
+}
+
+img {
+    display: inline-block;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+}
+
+.image-card {
+    display: inline-block;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 12px;
+    color: rgb(222, 189, 2);
 }
