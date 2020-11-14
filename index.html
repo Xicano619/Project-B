@@ -1,138 +1,147 @@
 <!-- Demo Layout for Materialize -->
 <!DOCTYPE html>
 <html lang="en-us">
-  ​
-  <head>
+​
+
+<head>
     ​
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <!-- We need the following responsive meta tag to ensure things scale correctly across varying
   devices. -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Import Google Icon Font -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Oleo font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet" />
 
     <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <link rel="stylesheet" href="./Assets/style.css" />
 
-    <title>619-Local Breweries</title>
+    <title>SDC Beer</title>
     ​
-  </head>
-  ​ ​
+</head>
+​ ​
 
-  <body>
+<body>
     <header>
-      <!-- Materialize  navbar -->
-      <nav class="nav-wrapper transparent">
-        <div class="container">
-          <!-- Brand logo -->
-          <a id="logo-home" href="" class="center brand-logo">Beer Me</a>
-          <a href="" class="sidenav-trigger" data-target="mobile-menu">
-            <i class="material-icons">menu</i>
-          </a>
-          <!-- Unlisted links: Home & About -->
-          <ul class="right hide-on-med-and-down">
-            <li>
-              <a id="home" href="#">Home</a>
-            </li>
-            <li>
-              <a id="about-link" href="./About.html">About</a>
-            </li>
-          </ul>
+        <!-- Materialize  navbar -->
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <!-- Brand logo -->
+                <a id="logo-home" href="" class="center brand-logo">SDC Beer</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <!-- Unlisted links: Home & About -->
+                <ul class="right hide-on-med-and-down">
 
-          <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>About</li>
-          </ul>
-        </div>
-      </nav>
-      <div class="row">
-        <!-- Row with city links -->
-        <div class="col s12 center" id="city-type">
-          <ul id="search-cities">
-            <li><a class="citylink" id="link1"  href="javascript:returnBreweriesInfo('Oceanside')">Oceanside</a></li>
-            <li><a class="citylink" id="link2"  href="javascript:returnBreweriesInfo('Vista')">Vista</a></li>
-            <li><a class="citylink" id="link3"  href="javascript:returnBreweriesInfo('San Diego')">San Diego</a></li>
-            <li><a class="citylink" id="link4"  href="javascript:returnBreweriesInfo('Mira Mesa')">Mira Mesa</a></li>
-            <li><a class="citylink" id="link5"  href="javascript:returnBreweriesInfo('Chula Vista')">Chula Vista</a></li>
-          </ul>
+                    <li>
+                        <a id="about-link" href="./About.html">About</a>
+                    </li>
+                </ul>
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s3 left">
-          <ul class="collection with-header">
-            <!-- Create column where breweries will be returned  -->
-            <li class="collection-header" id="breweries">
-              <h4>Breweries</h4>
-            </li>
-            <li class="collection-item list" id="list0"><a href="javascript:breweryInfo(0)"></a></li>
-            <li class="collection-item list" id="list1"><a href="javascript:breweryInfo(1)"></a></li>
-            <li class="collection-item list" id="list2"><a href="javascript:breweryInfo(2)"></a></li>
-            <li class="collection-item list" id="list3"><a href="javascript:breweryInfo(3)"></a></li>
-            <li class="collection-item list" id="list4"><a href="javascript:breweryInfo(4)"></a></li>
-            <li class="collection-item list" id="list5"><a href="javascript:breweryInfo(5)"></a></li>
-            <li class="collection-item list" id="list6"><a href="javascript:breweryInfo(6)"></a></li>
-            <li class="collection-item list" id="list7"><a href="javascript:breweryInfo(7)"></a></li>
-            <li class="collection-item list" id="list8"><a href="javascript:breweryInfo(8)"></a></li>
-            <li class="collection-item list" id="list9"><a href="javascript:breweryInfo(9)"></a></li>
-          </ul>
-        </div>
-        <!-- Google map Div -->
-        <div class="col m6 center" id="map">
-          <label for="map">MAP</label>
-        </div>
-        <div class="input-field col s3 right">
-          <ul class="collection with-header">
-            <!-- Column where user stores their favorite brewery(s) -->
-            <li class="collection-header" id="favorites">
-              <h4>Favorites</h4>
-            </li>
-            <li class="collection-item list" id="fav1">1</li>
-            <li class="collection-item list" id="fav2">2</li>
-            <li class="collection-item list" id="fav3">3</li>
-            <li class="collection-item list" id="fav4">4</li>
-            <li class="collection-item list" id="fav5">5</li>
-            <li class="collection-item list" id="fav6">6</li>
-            <li class="collection-item list" id="fav7">7</li>
-            <li class="collection-item list" id="fav8">8</li>
-            <li class="collection-item list" id="fav9">9</li>
-            <li class="collection-item list" id="fav10">10</li>
-          </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li>
+                        <a href="#"></a>Home</li>
+                    <li>
+                        <a href="#"></a>About</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <!-- Row with city links -->
+            <div class="col s12 center" id="city-type">
+                <ul id="search-cities">
+                    <li><a class="citylink" id="link1" href="javascript:returnBreweriesInfo('Oceanside')">Oceanside</a></li>
+                    <li><a class="citylink" id="link2" href="javascript:returnBreweriesInfo('Vista')">Vista</a></li>
+                    <li><a class="citylink" id="link3" href="javascript:returnBreweriesInfo('San Diego')">San Diego</a></li>
+                    <li><a class="citylink" id="link4" href="javascript:returnBreweriesInfo('Mira Mesa')">Mira Mesa</a></li>
+                    <li><a class="citylink" id="link5" href="javascript:returnBreweriesInfo('Chula Vista')">Chula Vista</a></li>
+                </ul>
+
+            </div>
         </div>
         <div class="row">
-          <div class="col md 6 center">
-            <div class="card transparent">
-              <div class="card-content white-text">
-                <!-- Switch -->
-                <div class="center switch">
-                  <label id="favorites-switch">Favorites
+            <div class="input-field col s3 left">
+                <ul class="collection with-header">
+                    <!-- Create column where breweries will be returned  -->
+                    <li class="collection-header" id="breweries">
+                        <h4>Breweries</h4>
+                    </li>
+                    <li class="collection-item list" id="list0">
+                        <a href="javascript:breweryInfo(0)"></a>
+                    </li>
+                    <li class="collection-item list" id="list1">
+                        <a href="javascript:breweryInfo(1)"></a>
+                    </li>
+                    <li class="collection-item list" id="list2">
+                        <a href="javascript:breweryInfo(2)"></a>
+                    </li>
+                    <li class="collection-item list" id="list3">
+                        <a href="javascript:breweryInfo(3)"></a>
+                    </li>
+                    <li class="collection-item list" id="list4">
+                        <a href="javascript:breweryInfo(4)"></a>
+                    </li>
+                    <li class="collection-item list" id="list5">
+                        <a href="javascript:breweryInfo(5)"></a>
+                    </li>
+                    <li class="collection-item list" id="list6">
+                        <a href="javascript:breweryInfo(6)"></a>
+                    </li>
+                    <li class="collection-item list" id="list7">
+                        <a href="javascript:breweryInfo(7)"></a>
+                    </li>
+                    <li class="collection-item list" id="list8">
+                        <a href="javascript:breweryInfo(8)"></a>
+                    </li>
+                    <li class="collection-item list" id="list9">
+                        <a href="javascript:breweryInfo(9)"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Google map Div -->
+            <div class="col m6 center" id="map">
+                <label for="map">MAP</label>
+            </div>
+            <div class="input-field col s3 right">
+                <ul class="collection with-header">
+                    <!-- Column where user stores their favorite brewery(s) -->
+                    <li class="collection-header" id="favorites">
+                        <h4>Favorites</h4>
+                    </li>
+                    <li class="collection-item list" id="fav1">1</li>
+                    <li class="collection-item list" id="fav2">2</li>
+                    <li class="collection-item list" id="fav3">3</li>
+                    <li class="collection-item list" id="fav4">4</li>
+                    <li class="collection-item list" id="fav5">5</li>
+                    <li class="collection-item list" id="fav6">6</li>
+                    <li class="collection-item list" id="fav7">7</li>
+                    <li class="collection-item list" id="fav8">8</li>
+                    <li class="collection-item list" id="fav9">9</li>
+                    <li class="collection-item list" id="fav10">10</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col md 6 center">
+                    <div class="card transparent" id="infoCard">
+                        <div class="card-content white-text">
+                            <!-- Switch -->
+                            <div class="center switch">
+                                <label id="favorites-switch">Favorites
                           <input type="checkbox">
                           <span class="lever"></span>
                       </label>
-                <!-- Create div where information of selected brewery -->
-                <span class="card-title brewery-info" id="location-info"
-                  >Info</span
+                                <!-- Create div where information of selected brewery -->
+                                <span class="card-title brewery-info" id="location-info">Info</span
                 >
                 <!-- basic information will populate this <p> tag such as: name, address and phone number of establishment -->
                   <p id="name-info"></p>

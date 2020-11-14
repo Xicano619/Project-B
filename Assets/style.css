@@ -40,6 +40,10 @@ a {
     font-size: 30px;
 }
 
+a:hover {
+    color: #007AFF;
+}
+
 
 /* Columns of breweries and favorites-transparent  */
 
@@ -59,6 +63,7 @@ a {
 
 li a {
     font-size: 20px;
+    color: goldenrod;
 }
 
 li {
@@ -131,5 +136,27 @@ h3 #san-diego {
     height: 525px;
     justify-content: center;
     margin-top: 25px;
-    margin-left: 80px;
+    margin-left: 115px;
+}
+
+.card-title {
+    color: goldenrod;
+    justify-content: center;
+    width: 500px
+}
+
+#name-info,
+#address1-info,
+#address2-info,
+#phone-info {
+    color: goldenrod;
+}
+
+#infoCard {
+    margin-left: 450px;
+}
+
+.center-brand-logo {
+    font-size: 30px;
+    padding-left: 700px;
 }
