@@ -3,15 +3,8 @@ function initMap() {
         center: { lat: 32.8800604, lng: -117.2362022 }, // default to start at current location  (user can set address if they want to change this)
         zoom: 16, // static zoom level
     });
-
-    for (let i = 0; i < results.length; i++) {
-        new google.maps.Marker({
-            position: results[i],
-            map,
-            icon: marker,
-        });
-    }
 }
+
 document.getElementById("link1").addEventListener("click", function() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: 33.20303085967621, lng: -117.33123779296875 }, // default to start at current location  (user can set address if they want to change this)

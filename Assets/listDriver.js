@@ -19,6 +19,7 @@ function addFav(infoName, infoAdd1, infoAdd2, infoPhone) {
 
 function delFav() {
     favCount = 0;
+    fbrewery = [];
     document.getElementById("fav0").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
     document.getElementById("fav1").innerHTML = "<a href=\"javascript:favInfo(1)\"></a>";
     document.getElementById("fav2").innerHTML = "<a href=\"javascript:favInfo(2)\"></a>";
