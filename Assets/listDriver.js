@@ -20,15 +20,15 @@ function addFav(infoName, infoAdd1, infoAdd2, infoPhone) {
 function delFav() {
     favCount = 0;
     document.getElementById("fav0").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav1").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav2").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav3").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav4").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav5").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav6").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav7").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav8").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
-    document.getElementById("fav9").innerHTML = "<a href=\"javascript:favInfo(0)\"></a>";
+    document.getElementById("fav1").innerHTML = "<a href=\"javascript:favInfo(1)\"></a>";
+    document.getElementById("fav2").innerHTML = "<a href=\"javascript:favInfo(2)\"></a>";
+    document.getElementById("fav3").innerHTML = "<a href=\"javascript:favInfo(3)\"></a>";
+    document.getElementById("fav4").innerHTML = "<a href=\"javascript:favInfo(4)\"></a>";
+    document.getElementById("fav5").innerHTML = "<a href=\"javascript:favInfo(5)\"></a>";
+    document.getElementById("fav6").innerHTML = "<a href=\"javascript:favInfo(6)\"></a>";
+    document.getElementById("fav7").innerHTML = "<a href=\"javascript:favInfo(7)\"></a>";
+    document.getElementById("fav8").innerHTML = "<a href=\"javascript:favInfo(8)\"></a>";
+    document.getElementById("fav9").innerHTML = "<a href=\"javascript:favInfo(9)\"></a>";
 }
 
 function favInfo(brewery) {
