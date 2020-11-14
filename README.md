@@ -20,7 +20,7 @@ The following is our first version of a rough draft wireframe:
 
 ## Application Preview 
 
-(https://user-images.githubusercontent.com/25594179/99143005-07134380-260f-11eb-978c-2e4522b83a64.png)
+https://user-images.githubusercontent.com/25594179/99143005-07134380-260f-11eb-978c-2e4522b83a64.png
 
 
 
